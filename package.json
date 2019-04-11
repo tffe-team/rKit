@@ -1,105 +1,105 @@
 {
-  "name": "rkit",
-  "version": "1.0.0",
-  "description": "tools for tf team",
-  "main": "lib/Service.js",
-  "typings": "types/index.d.ts",
-  "bin": {
-    "rkit": "bin/rkit.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tffe-team/rKit.git"
-  },
-  "keywords": [
-    "rkit",
-    "cli"
-  ],
-  "author": "cro-fe",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/tffe-team/rKit/issues"
-  },
-  "homepage": "https://github.com/tffe-team/rKit#readme",
-  "dependencies": {
-    "@intervolga/optimize-cssnano-plugin": "^1.0.6",
-    "@soda/friendly-errors-webpack-plugin": "^1.7.1",
-    "@vue/cli-overlay": "^3.4.1",
-    "@vue/cli-plugin-eslint": "^3.2.0",
-    "@vue/cli-plugin-typescript": "^3.2.0",
-    "@vue/cli-service": "^3.2.0",
-    "@vue/cli-shared-utils": "^3.4.1",
-    "@vue/component-compiler-utils": "^2.6.0",
-    "@vue/eslint-config-typescript": "^3.2.0",
-    "@vue/preload-webpack-plugin": "^1.1.0",
-    "@vue/web-component-wrapper": "^1.2.0",
-    "acorn": "^6.1.0",
-    "acorn-walk": "^6.1.1",
-    "address": "^1.0.3",
-    "autoprefixer": "^9.4.8",
-    "cache-loader": "^2.0.1",
-    "case-sensitive-paths-webpack-plugin": "^2.2.0",
-    "chalk": "^2.4.2",
-    "clipboardy": "^1.2.3",
-    "cliui": "^4.1.0",
-    "copy-webpack-plugin": "^4.6.0",
-    "css-loader": "^1.0.1",
-    "cssnano": "^4.1.10",
-    "debug": "^4.1.1",
-    "dotenv": "^6.2.0",
-    "dotenv-expand": "^4.2.0",
-    "download-git-repo": "^1.1.0",
-    "escape-string-regexp": "^1.0.5",
-    "fs-extra": "^7.0.1",
-    "globby": "^9.0.0",
-    "hash-sum": "^1.0.2",
-    "html-webpack-plugin": "^3.2.0",
-    "inquirer": "^6.2.2",
-    "launch-editor-middleware": "^2.2.1",
-    "lodash.defaultsdeep": "^4.6.0",
-    "lodash.mapvalues": "^4.6.0",
-    "lodash.transform": "^4.6.0",
-    "mini-css-extract-plugin": "^0.5.0",
-    "minimist": "^1.2.0",
-    "ora": "^3.1.0",
-    "portfinder": "^1.0.20",
-    "postcss-loader": "^3.0.0",
-    "read-pkg": "^4.0.1",
-    "semver": "^5.6.0",
-    "slash": "^2.0.0",
-    "source-map-url": "^0.4.0",
-    "ssri": "^6.0.1",
-    "string.prototype.padend": "^3.0.0",
-    "terser-webpack-plugin": "^1.2.2",
-    "thread-loader": "^2.1.2",
-    "typescript": "^3.1.1",
-    "url-loader": "^1.1.2",
-    "vue-loader": "^15.6.4",
-    "webpack": ">=4 < 4.29",
-    "webpack-bundle-analyzer": "^3.0.4",
-    "webpack-chain": "^4.11.0",
-    "webpack-dev-server": "^3.2.0",
-    "webpack-merge": "^4.2.1",
-    "yorkie": "^2.0.0",
-    "vue-style-loader": "^3.0.1"
-  },
-  "peerDependencies": {
-    "vue-template-compiler": "^2.0.0"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.5.5",
-    "fibers": "^3.1.1",
-    "node-sass": "^4.11.0",
-    "sass-loader": "^7.1.0",
-    "vue": "^2.6.7",
-    "vue-router": "^3.0.1",
-    "vue-template-compiler": "^2.6.7",
-    "vuex": "^3.0.1"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "engines": {
-    "node": ">=8"
-  }
+    "name": "rui-rkit",
+    "version": "1.0.4",
+    "description": "tools for tf team",
+    "main": "lib/Service.js",
+    "typings": "types/index.d.ts",
+    "bin": {
+        "rui-rkit": "bin/rkit.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tffe-team/rKit.git"
+    },
+    "keywords": [
+        "rui-rkit",
+        "cli"
+    ],
+    "author": "cro-fe",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/tffe-team/rKit/issues"
+    },
+    "homepage": "https://github.com/tffe-team/rKit#readme",
+    "dependencies": {
+        "@vue/cli-plugin-babel": "^3.5.5",
+        "@intervolga/optimize-cssnano-plugin": "^1.0.6",
+        "@soda/friendly-errors-webpack-plugin": "^1.7.1",
+        "@vue/cli-overlay": "^3.4.1",
+        "@vue/cli-plugin-eslint": "^3.2.0",
+        "@vue/cli-plugin-typescript": "^3.2.0",
+        "@vue/cli-service": "^3.2.0",
+        "@vue/cli-shared-utils": "^3.4.1",
+        "@vue/component-compiler-utils": "^2.6.0",
+        "@vue/eslint-config-typescript": "^3.2.0",
+        "@vue/preload-webpack-plugin": "^1.1.0",
+        "@vue/web-component-wrapper": "^1.2.0",
+        "acorn": "^6.1.0",
+        "acorn-walk": "^6.1.1",
+        "address": "^1.0.3",
+        "autoprefixer": "^9.4.8",
+        "cache-loader": "^2.0.1",
+        "case-sensitive-paths-webpack-plugin": "^2.2.0",
+        "chalk": "^2.4.2",
+        "clipboardy": "^1.2.3",
+        "cliui": "^4.1.0",
+        "copy-webpack-plugin": "^4.6.0",
+        "css-loader": "^1.0.1",
+        "cssnano": "^4.1.10",
+        "debug": "^4.1.1",
+        "dotenv": "^6.2.0",
+        "dotenv-expand": "^4.2.0",
+        "download-git-repo": "^1.1.0",
+        "escape-string-regexp": "^1.0.5",
+        "fs-extra": "^7.0.1",
+        "globby": "^9.0.0",
+        "hash-sum": "^1.0.2",
+        "html-webpack-plugin": "^3.2.0",
+        "inquirer": "^6.2.2",
+        "launch-editor-middleware": "^2.2.1",
+        "lodash.defaultsdeep": "^4.6.0",
+        "lodash.mapvalues": "^4.6.0",
+        "lodash.transform": "^4.6.0",
+        "mini-css-extract-plugin": "^0.5.0",
+        "minimist": "^1.2.0",
+        "ora": "^3.1.0",
+        "portfinder": "^1.0.20",
+        "postcss-loader": "^3.0.0",
+        "read-pkg": "^4.0.1",
+        "semver": "^5.6.0",
+        "slash": "^2.0.0",
+        "source-map-url": "^0.4.0",
+        "ssri": "^6.0.1",
+        "string.prototype.padend": "^3.0.0",
+        "terser-webpack-plugin": "^1.2.2",
+        "thread-loader": "^2.1.2",
+        "typescript": "^3.1.1",
+        "url-loader": "^1.1.2",
+        "vue-loader": "^15.6.4",
+        "webpack": ">=4 < 4.29",
+        "webpack-bundle-analyzer": "^3.0.4",
+        "webpack-chain": "^4.11.0",
+        "webpack-dev-server": "^3.2.0",
+        "webpack-merge": "^4.2.1",
+        "yorkie": "^2.0.0",
+        "vue-style-loader": "^3.0.1"
+    },
+    "peerDependencies": {
+        "vue-template-compiler": "^2.0.0"
+    },
+    "devDependencies": {
+        "fibers": "^3.1.1",
+        "node-sass": "^4.11.0",
+        "sass-loader": "^7.1.0",
+        "vue": "^2.6.7",
+        "vue-router": "^3.0.1",
+        "vue-template-compiler": "^2.6.7",
+        "vuex": "^3.0.1"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "engines": {
+        "node": ">=8"
+    }
 }
