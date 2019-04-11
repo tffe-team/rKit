@@ -7,6 +7,9 @@ rkit 是一个基于 Webpack 的打包工具，它利用插件机制封装了各
 
 - latest 稳定版: `[sudo] npm install rkit -g`
 
+## node.js 版本
+- node >=8
+
 ## 快速开始
 
 1. 创建目录 `mkdir rkit-app && cd rkit-app`
