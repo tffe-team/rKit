@@ -1,6 +1,6 @@
 {
     "name": "rui-rkit",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "description": "tools for tf team",
     "main": "lib/Service.js",
     "typings": "types/index.d.ts",
@@ -83,13 +83,13 @@
         "webpack-merge": "^4.2.1",
         "yorkie": "^2.0.0",
         "vue-style-loader": "^3.0.1",
-        "vue-template-compiler": "^2.0.0"
+        "vue-template-compiler": "^2.0.0",
+        "node-sass": "^4.11.0",
+        "sass-loader": "^7.1.0"
     },
     "peerDependencies": {},
     "devDependencies": {
         "fibers": "^3.1.1",
-        "node-sass": "^4.11.0",
-        "sass-loader": "^7.1.0",
         "vue": "^2.6.7",
         "vue-router": "^3.0.1",
         "vuex": "^3.0.1"
