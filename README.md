@@ -17,6 +17,14 @@ rui-rkit 是一个基于 Webpack 的打包工具，它利用插件机制封装�
 3. 安装依赖 `npm install`
 4. 启动服务 `npm run dev`
 初始化结束后，项目中会生成一个名为 `rkit.config.js` 的配置文件：
+## hooks
+新增hooks配置  
+```
+hooks:{
+  brefore: (config) => {},  //编译前钩子
+  after: (config) => {} //编译后钩子
+}
+```
 ## 配置文件选项 参考
 https://cli.vuejs.org/zh/config/#%E5%85%A8%E5%B1%80-cli-%E9%85%8D%E7%BD%AE
 
@@ -27,3 +35,7 @@ https://cli.vuejs.org/zh/config/#%E5%85%A8%E5%B1%80-cli-%E9%85%8D%E7%BD%AE
 - build - 生产环节编译
 - inspect - 生存webpack 配置
 - lint - 检测代码
+
+## change log  
+1.修复staticPath文件缺少冒号问题    
+2.新增hooks配置
