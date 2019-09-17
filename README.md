@@ -39,3 +39,4 @@ https://cli.vuejs.org/zh/config/#%E5%85%A8%E5%B1%80-cli-%E9%85%8D%E7%BD%AE
 ## change log  
 1.修复staticPath文件缺少冒号问题    
 2.新增hooks配置
+3.config文件生成样式文件顺序错乱的问题，新增pc模版
