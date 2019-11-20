@@ -27,11 +27,11 @@ hooks:{
 ```
 ## 支持国际化打包
 ```
-domainList: {
-  domain: `//test.xxx.comn`, //域名
+domainList: [{
+  domain: `/[/test.xxx.comn`, //域名
   path: 'en', //目录
   isBuild: true // 是否编译
-}
+}]
 // 生成目录为dist/en/xxxx(版本号)
 // 注意：如何domainList存在isBuild为true的选项时会覆盖publicPath打包结果
 ```
