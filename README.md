@@ -45,8 +45,12 @@ https://cli.vuejs.org/zh/config/#%E5%85%A8%E5%B1%80-cli-%E9%85%8D%E7%BD%AE
 - build - 生产环节编译
 - inspect - 生存webpack 配置
 - lint - 检测代码
+- sync - 上传静态文件和sourcemap
 
 ## change log  
 1.修复staticPath文件缺少冒号问题    
 2.新增hooks配置
 3.config文件生成样式文件顺序错乱的问题，新增pc模版
+4.新增强制codereview流程
+5.新增上传静态文件到远程主机
+6.新增上传soucemap到sentry服务
