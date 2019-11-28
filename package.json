@@ -1,6 +1,6 @@
 {
     "name": "rui-rkit",
-    "version": "1.2.6",
+    "version": "1.2.7",
     "description": "tools for tf team",
     "main": "lib/Service.js",
     "typings": "types/index.d.ts",
