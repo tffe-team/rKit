@@ -39,9 +39,11 @@ domainList: [{
 ## 支持强制DIFF流程
 - 请在rkit.config.js中配置，例如： `projectName: 'easyLoan'`
 - 分支生成的DIFF,必须在codereview平台被他人通过才能进行npm run build
-- npm run build 选择分支可以指定分支md5 作为版本号
+- npm run build 
+   - 选择分支可以指定分支md5 作为版本号
+   - 选择部署环境，bate 为线下环境，production为线上环境
 
-注：老版本中，原有的*build/prod.env.js*已经废弃，更新后可以删除
+注：老版本中，原有的*build/prod.env.js*已经废弃，更新 1.2.7 后即可删除
 
 ## 支持同步静态文件
 - 请在rkit.config.js中配置，例如： `syncHost: '10.1.1.1'`
@@ -49,34 +51,19 @@ domainList: [{
 
 ## 支持同步SourceMap到Sentry
 
-需要支持Sentry平台，请在项目根目录中新建文件：
-```
-// .sentryclirc
+运行 `rui-rkit sync --sentry`将上传并发布sentry版本，发布版本为最近一次npm run build的版本和环境变量，写入在deploy.json中
 
-[defaults]
-project=sentry项目名
-url=sentry服务地址
-org=sentry组织名
+在项目中引入Sentry SDK 可以使用以下环境变量作为标识：
 
-[auth]
-token=你的token
-```
+- process.env.VUE_APP_DEPLOY_ENV ：部署环境
+- process.env.VUE_APP_DEPLOY_VESION ：当前项目版本号
 
-```
-// .env.production  ==> production环境
-NODE_ENV=production
-VUE_APP_SENTRY_ENV=prod
-VUE_APP_SENTRY_RELASE=你production环境的版本号
-```
 
-```
-// .env.beta  ==> beta环境
-NODE_ENV=production
-VUE_APP_SENTRY_ENV=beta
-VUE_APP_SENTRY_RELASE=你beta环境的版本号
-```
+注：npm run build 将会自动生成`deploy.json`用于存储版本信息，请加入到*.gitignore*中避免上传到git仓库
 
-运行 `rui-rkit sync --sentry`将上传并发布sentry版本号，需要支持sentry env，新建对应的`.env.xxx`的配置文件，使用`rui-rkit sync --sentry --mode xxx`,其中xxx表示对应的环境名。
+```.gitignore
+deploy.json
+```
 
 
 
