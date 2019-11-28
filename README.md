@@ -51,7 +51,7 @@ domainList: [{
 
 ## 支持同步SourceMap到Sentry
 
-运行 `rui-rkit sync --sentry`将上传并发布sentry版本，发布版本为最近一次npm run build的版本和环境变量，写入在deploy.json中
+运行 `rui-rkit sync --sentry`将上传并发布sentry版本，发布版本为最近一次npm run build的版本和环境变量，写入在.sentryVariable中
 
 在项目中引入Sentry SDK 可以使用以下环境变量作为标识：
 
@@ -59,10 +59,10 @@ domainList: [{
 - process.env.VUE_APP_DEPLOY_VESION ：当前项目版本号
 
 
-注：npm run build 将会自动生成`deploy.json`用于存储版本信息，请加入到*.gitignore*中避免上传到git仓库
+注：npm run build 将会自动生成`.sentryVariable`用于存储版本信息，请加入到*.gitignore*中避免上传到git仓库
 
 ```.gitignore
-deploy.json
+.sentryVariable
 ```
 
 
