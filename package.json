@@ -1,6 +1,6 @@
 {
     "name": "rui-rkit",
-    "version": "1.2.6",
+    "version": "1.2.7",
     "description": "tools for tf team",
     "main": "lib/Service.js",
     "typings": "types/index.d.ts",
@@ -23,6 +23,7 @@
     "homepage": "https://github.com/tffe-team/rKit#readme",
     "dependencies": {
         "@intervolga/optimize-cssnano-plugin": "^1.0.6",
+        "@sentry/cli": "^1.49.0",
         "@soda/friendly-errors-webpack-plugin": "^1.7.1",
         "@vue/cli-overlay": "^3.4.1",
         "@vue/cli-plugin-babel": "^3.5.5",
@@ -60,6 +61,7 @@
         "lodash.defaultsdeep": "^4.6.0",
         "lodash.mapvalues": "^4.6.0",
         "lodash.transform": "^4.6.0",
+        "md5": "^2.2.1",
         "mini-css-extract-plugin": "^0.5.0",
         "minimist": "^1.2.0",
         "node-sass": "^4.11.0",
